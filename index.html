@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Site de Mensagem</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .message-box {
+        text-align: center;
+        padding: 20px;
+        border: 2px solid #333;
+        border-radius: 8px;
+        background-color: #cedd01;
+    }
+
+    h1 {
+        color: #333;
+    }
+
+    p {
+        color: #666;
+    }
+
+    .virus-img {
+        display: none;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <div class="message-box">
+        <h1>Seus dados foram copiados com sucesso!</h1>
+        <p>Obrigado por utilizar nossos serviços.</p>
+        <button onclick="showVirus()">Clique aqui!</button>
+        <img src="./pal.gif" class="virus-img" alt="Vírus">
+    </div>
+</div>
+
+<script>
+    function showVirus() {
+        var virusImg = document.querySelector('.virus-img');
+        virusImg.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
